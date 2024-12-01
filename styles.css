@@ -1,0 +1,66 @@
+/* Bakgrundsbild */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #020c22;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  background-image: url('images/poster.png'); /* Här anger du sökvägen till bilden */
+  background-size: cover; /* Gör så att bilden täcker hela bakgrunden */
+  background-position: center center; /* Centrerar bilden */
+  background-attachment: fixed; /* Gör så att bilden inte rör sig vid scrollning */
+}
+
+/* Andra stilar som du redan hade */
+header {
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.7); /* Transparent svart för headern så att texten syns bättre */
+  border-bottom: 2px solid #444;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+#search {
+  margin-top: 15px;
+  padding: 10px;
+  width: 80%;
+  max-width: 400px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+#planet-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+.planet {
+  background-color: #4e4e4e;
+  margin: 10px;
+  padding: 15px;
+  border-radius: 8px;
+  width: 200px;
+  text-align: center;
+  color: #fff;
+  transition: transform 0.3s ease;
+}
+
+.planet:hover {
+  transform: scale(1.05);
+}
+
+.planet h3 {
+  margin: 10px 0;
+  font-size: 1.2em;
+}
+
+.planet p {
+  font-size: 0.9em;
+}
